@@ -1,25 +1,7 @@
-﻿
+using System;
+using System.Linq;
 
-enum ArticleType
-{
-    Food,
-    Clothing,
-    Electronics,
-    Furniture
-}
 
-enum ClientType
-{
-    Regular,    
-    Priority,
-    VIP
-}
-
-enum PayType
-{
-    Cash,
-    Card
-}
 
 class Student
 {
@@ -188,5 +170,19 @@ class Student
             Console.Write(mark + " ");
         }
         Console.WriteLine();
+    }
+
+    
+}
+
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Student st = new Student("Ivanov", "Ivan", "Ivanovich", "CS-101", 18);
+
+        st.set_mark("programming", 5);
+        st.PrintInfo();
     }
 }

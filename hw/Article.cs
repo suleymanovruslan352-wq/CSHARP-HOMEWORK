@@ -11,3 +11,12 @@
         this.product_value = product_value;
     }
 }
+
+
+enum ArticleType
+{
+    Food,
+    Clothing,
+    Electronics,
+    Furniture
+}

@@ -1,4 +1,4 @@
-﻿struct Client
+struct Client
 {
     public int client_code;
     public string client_firstname;
@@ -22,4 +22,11 @@
         this.order_count = order_count;
         this.order_sum = order_sum;
     }
+}
+
+enum ClientType
+{
+    Regular,
+    Priority,
+    VIP
 }
